@@ -22,5 +22,3 @@ build/
 coverage/
 npm-debug.log*
 
-# Local-only DB config
-config/rawDatabase.js
