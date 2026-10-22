@@ -38,7 +38,7 @@ cd <project-folder>
 ```
 Install Dependencies Run the following command to install all required Node.js modules:<br/><br/>
 `npm install` <br/><br/>
-Configure Environment Variables Create a .env file in the root directory and configure the following:
+Configure Environment Variables: copy `.env.example` to `.env` in the root directory and fill in:
 ```
 PORT=3001
 DB_HOST=localhost

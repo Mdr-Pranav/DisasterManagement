@@ -1,3 +1,26 @@
-node_modules/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# Secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+*.log
+
+# Node
+node_modules/
+dist/
+build/
+coverage/
+npm-debug.log*
+
+# Local-only DB config
 config/rawDatabase.js

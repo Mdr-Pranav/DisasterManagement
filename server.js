@@ -28,32 +28,6 @@ app.use('/api/history', historyRoutes);
 
 
 
-// // Test route to add a sample user
-// app.get('/test-user', async (req, res) => {
-//     try {
-//         // Check if the user already exists
-//         const existingUser = await User.findOne({ where: { Username: 'johndoe' } });
-//         if (existingUser) {
-//             return res.json({ message: 'User already exists', user: existingUser });
-//         }
-
-//         // Create a new user if not exists
-//         const user = await User.create({
-//             First_name: 'John',
-//             Last_name: 'Doe',
-//             Username: 'johndoe',
-//             Email: 'johndoe@example.com',
-//             Phone_number: '1234567890',
-//             password: 'hashedpassword', // Replace with hashed password in production
-//             DOB: '1990-01-01'
-//         });
-//         res.json({ message: 'User created successfully', user });
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).json({ message: 'Error creating user', error });
-//     }
-// });
-
 // Sync database and start the server
 sequelize.authenticate()
   .then(() => console.log('Database connected successfully.'))
